@@ -1,4 +1,13 @@
 import streamlit as st
+import random
+import matplotlib.pyplot as plt
+# x axis values
+x = [1,2,3]
+# corresponding y axis values
+y = [2,4,1]
+ 
+# plotting the points
+fig = plt.plot(x, y)
 
 def load_data(nrows):
     data =pd.plotting(fig, nrows=nrows)
