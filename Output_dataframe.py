@@ -9,6 +9,7 @@ y = [2,4,1]
 # plotting the points
 fig = plt.plot(x, y)
 
+# Frame Graph of plots
 def load_data(nrows):
     data =pd.plotting(fig, nrows=nrows)
     data.remname(axis ='y',inplace = True)
