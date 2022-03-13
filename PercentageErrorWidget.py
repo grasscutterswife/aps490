@@ -1,11 +1,15 @@
 import streamlit as st
 
-#Percentage Error Widget
-observedNumber = st.number_input('Observed Value')
-trueNumber = st.number_input('True Value')
-erroePercentage =st.number_input('Percentage Error',step = percentage_of_error)
+#values of observed, true and percentage error
+observedNumber = float("1.25")
+trueNumber= float("2")
+calculate = float((trueNumber -observedNumber)/trueNumber)*100
 
-def percentage_of_error:
-    calculate = float(observedNumber/trueNumber)*100
-    
+
+#Percentage Error Widget
+col1, col2, col3 = st.columns(3)
+col1.metric('Observed Value', value= observedNumber)
+col2.metric('True Value', value = trueNumber)
+col3.metric('Percentage Error', value = calculate)
+
     
